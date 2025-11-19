@@ -471,8 +471,9 @@ const InteractiveSeatingMap: React.FC = () => {
                         strokeWidth={isFocused ? 2 : 0}
                         className={seat.status === 'available' ? 'cursor-pointer hover:opacity-80 transition' : 'cursor-not-allowed'}
                         focusable="true"
-                        aria-disabled={seat.status !== 'available'}
-                        aria-pressed={isSelected}
+                        aria-disabled={seat.status !== 'available' ? 'true' : 'false'}
+                        aria-pressed={isSelected ? 'true' : 'false'}
+                        style={{ pointerEvents: 'auto' }}
                         onPointerDown={(e) => {
                           e.stopPropagation();
                         }}
