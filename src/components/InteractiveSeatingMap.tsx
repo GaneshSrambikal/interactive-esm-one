@@ -75,15 +75,6 @@ const InteractiveSeatingMap: React.FC = () => {
       try {
         const venueData = await loadVenueData();
         setVenue(venueData);
-
-        const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved) {
-          try {
-            setSelectedSeats(new Set(JSON.parse(saved)));
-          } catch (e) {
-            console.error('Failed to load saved seats', e);
-          }
-        }
       } catch (err) {
         setError('Failed to load venue data. Please make sure venue.json exists in the public folder.');
         console.error('Error loading venue:', err);
@@ -93,9 +84,51 @@ const InteractiveSeatingMap: React.FC = () => {
     loadData();
   }, []);
 
+  const restoredRef = useRef(false);
+
+  // Restore AFTER venue loads
   useEffect(() => {
+    if (!venue) return;
+
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (!saved) {
+      restoredRef.current = true;
+      return;
+    }
+
+    try {
+      const ids = JSON.parse(saved) as string[];
+      const valid = new Set<string>();
+
+      for (const s of venue.sections.flatMap(sec => sec.rows.flatMap(r => r.seats))) {
+        if (s.status === "available" && ids.includes(s.id)) {
+          valid.add(s.id);
+        }
+      }
+
+      // schedule the state update asynchronously to avoid cascading renders inside an effect
+      setTimeout(() => {
+        setSelectedSeats(valid);
+        restoredRef.current = true;
+      }, 0);
+      return;
+    } catch (err) {
+      console.warn("Failed to restore seats", err);
+    }
+
+    restoredRef.current = true;
+  }, [venue]);
+
+  // Save AFTER restore completed
+  useEffect(() => {
+    if (!restoredRef.current) return;
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...selectedSeats]));
   }, [selectedSeats]);
+
+
+  // useEffect(() => {
+  //   localStorage.setItem(STORAGE_KEY, JSON.stringify([...selectedSeats]));
+  // }, [selectedSeats]);
 
   const allSeats = useMemo(() => {
     if (!venue) return [];
@@ -394,55 +427,6 @@ const InteractiveSeatingMap: React.FC = () => {
               </div>
             </div>
 
-            {/* <div className="border rounded-lg overflow-auto bg-gray-50 dark:bg-gray-950" style={{ height: '500px' }}>
-              <svg
-                ref={svgRef}
-                width={venue.map.width * scale}
-                height={venue.map.height * scale}
-                className="mx-auto"
-                role="application"
-                aria-label="Interactive seating map"
-              >
-                {allSeats.map(seat => {
-                  const isSelected = selectedSeats.has(seat.id);
-                  const isFocused = focusedSeat?.id === seat.id;
-                  
-                  let fill = '#d1d5db';
-                  if (seat.status === 'available') {
-                    fill = heatMapMode ? PRICE_TIERS[seat.priceTier].color : '#10b981';
-                  } else if (seat.status === 'reserved') fill = '#f59e0b';
-                  else if (seat.status === 'sold') fill = '#ef4444';
-                  
-                  if (isSelected) fill = '#3b82f6';
-
-                  return (
-                    <circle
-                      key={seat.id}
-                      cx={seat.x * scale}
-                      cy={seat.y * scale}
-                      r={3 * scale}
-                      fill={fill}
-                      stroke={isFocused ? '#fff' : 'none'}
-                      strokeWidth={isFocused ? 2 : 0}
-                      className={seat.status === 'available' ? 'cursor-pointer hover:opacity-80 transition' : 'cursor-not-allowed'}
-                      onClick={() => toggleSeat(seat)}
-                      onMouseEnter={() => setFocusedSeat(seat)}
-                      onMouseLeave={() => setFocusedSeat(null)}
-                      tabIndex={seat.status === 'available' ? 0 : -1}
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                          e.preventDefault();
-                          toggleSeat(seat);
-                        }
-                      }}
-                      aria-label={`Seat ${seat.id}, ${seat.status}, $${PRICE_TIERS[seat.priceTier].price}`}
-                      role="button"
-                    />
-                  );
-                })}
-              </svg>
-            </div> */}
-
             <div
               className="border rounded-lg overflow-auto bg-gray-50 dark:bg-gray-950"
               style={{ height: '500px' }}
@@ -461,7 +445,7 @@ const InteractiveSeatingMap: React.FC = () => {
                 onWheel={handleWheel}
                 // onTouchMove={handleTouchMove}
                 // onTouchEnd={handleTouchEnd}
-                style={{ touchAction: "none"}}
+                style={{ touchAction: "none" }}
               >
                 <g transform={`translate(${pan.x} ${pan.y}) scale(${scale})`}>
                   {allSeats.map(seat => {
