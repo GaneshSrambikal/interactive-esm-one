@@ -3,7 +3,9 @@
   Interactive ESM is a small demo app that renders an interactive seating map using React + TypeScript + Vite.
 
   Live: https://interactive-esm-one.vercel.app/
-  Screenshort:()[]
+  
+  Screenshort:
+  ![APP Screenshort](public/seatmap.png)
 
   Key features
   - Interactive SVG seating map with pan & zoom
