@@ -4,7 +4,6 @@
 
   Live: https://interactive-esm-one.vercel.app/
   
-  Screenshort:
   ![APP Screenshort](public/seatmap.png)
 
   Key features
