@@ -1,6 +1,6 @@
-  # Interactive ESM One
+  # Interactive ESM
 
-  Interactive ESM One is a small demo app that renders an interactive seating map using React + TypeScript + Vite.
+  Interactive ESM is a small demo app that renders an interactive seating map using React + TypeScript + Vite.
 
   Key features
   - Interactive SVG seating map with pan & zoom
