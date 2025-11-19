@@ -16,58 +16,71 @@ The React Compiler is not enabled on this template because of its impact on dev 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
 ```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+  # Interactive ESM One
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+  Interactive ESM One is a small demo app that renders an interactive seating map using React + TypeScript + Vite.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  Key features
+  - Interactive SVG seating map with pan & zoom
+  - Keyboard navigation (tab, arrows), Enter/Space to select
+  - Selection persistence in `localStorage`
+  - Visual modes: heat map and dark mode
+  - Max 8 seats can be selected; reserved/held/sold seats are not selectable
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  Quick start
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  Prerequisites:
+  - Node.js 18+ (or compatible)
+  - `pnpm` (recommended) or `npm`
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  Install dependencies:
+
+  ```bash
+  pnpm install
+  ```
+
+  Start dev server:
+
+  ```bash
+  pnpm dev
+  ```
+
+  Open http://localhost:5173 in your browser.
+
+  Build for production:
+
+  ```bash
+  pnpm build
+  ```
+
+  Preview the production build locally:
+
+  ```bash
+  pnpm preview
+  ```
+
+  End-to-end tests (Playwright)
+
+  This project includes Playwright tests under `tests/e2e`.
+
+  Run the tests (ensure dev server is running in another terminal):
+
+  ```bash
+  pnpm dev          # run app
+  pnpm test:e2e     # run playwright tests
+  ```
+
+  Useful scripts
+  - `pnpm dev` — start Vite dev server
+  - `pnpm build` — build production bundle
+  - `pnpm preview` — preview production bundle
+  - `pnpm test:e2e` — run Playwright E2E tests
+
+  Project notes
+  - Seat selections persist in `localStorage` under the key `selected-seats`.
+  - The seating map data is loaded from `public/venue.json`.
+  - If tests fail related to keyboard focus on SVG circles, run tests headed/with `--debug` and verify the browser supports focusing SVG elements; some test environments may need additional focus handling.
+
+  License
+
+  This repository contains example/demo code — update or add a license as needed.
