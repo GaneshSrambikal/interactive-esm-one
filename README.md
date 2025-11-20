@@ -67,6 +67,3 @@
   - The seating map data is loaded from `public/venue.json`.
   - If tests fail related to keyboard focus on SVG circles, run tests headed/with `--debug` and verify the browser supports focusing SVG elements; some test environments may need additional focus handling.
 
-  License
-
-  This repository contains example/demo code — update or add a license as needed.
