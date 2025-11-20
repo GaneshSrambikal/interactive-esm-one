@@ -177,12 +177,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4064,
+                      "duration": 10667,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:42:57.890Z",
+                      "startTime": "2025-11-20T17:05:58.056Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -211,12 +211,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4189,
+                      "duration": 10133,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:42:57.963Z",
+                      "startTime": "2025-11-20T17:05:57.744Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -245,12 +245,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 5872,
+                      "duration": 13444,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:42:57.968Z",
+                      "startTime": "2025-11-20T17:05:57.756Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -279,12 +279,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4119,
+                      "duration": 11343,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:42:57.925Z",
+                      "startTime": "2025-11-20T17:05:57.873Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -310,15 +310,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 3,
+                      "workerIndex": 8,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 12077,
+                      "duration": 11727,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:12.265Z",
+                      "startTime": "2025-11-20T17:06:21.982Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -345,14 +345,14 @@
                   "results": [
                     {
                       "workerIndex": 9,
-                      "parallelIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 13577,
+                      "duration": 27206,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:12.168Z",
+                      "startTime": "2025-11-20T17:06:21.976Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -367,41 +367,7 @@
             },
             {
               "title": "should enforce maximum of 8 seat selections",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 16543,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-11-19T16:43:12.128Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b9a5234c35bda9cc218c-781c1f5133ecc00f89e4",
-              "file": "seating-map.spec.ts",
-              "line": 66,
-              "column": 3
-            },
-            {
-              "title": "should calculate and display total price correctly",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -413,19 +379,109 @@
                   "results": [
                     {
                       "workerIndex": 11,
-                      "parallelIndex": 7,
-                      "status": "passed",
-                      "duration": 13552,
-                      "errors": [],
+                      "parallelIndex": 6,
+                      "status": "timedOut",
+                      "duration": 31463,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts",
+                            "column": 35,
+                            "line": 71
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('circle[aria-label*=\"available\"]').nth(4)\u001b[22m\n\u001b[2m    - locator resolved to <circle r=\"3\" cy=\"40\" cx=\"350\" tabindex=\"0\" stroke=\"none\" role=\"button\" fill=\"#10b981\" stroke-width=\"0\" focusable=\"true\" aria-pressed=\"false\" aria-disabled=\"false\" aria-label=\"Seat A-1-11, available, $150\" class=\"cursor-pointer hover:opacity-80 transition\"></circle>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\n\n\u001b[0m \u001b[90m 69 |\u001b[39m     \u001b[90m// Select 8 seats\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m i \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m i \u001b[33m<\u001b[39m \u001b[35m8\u001b[39m\u001b[33m;\u001b[39m i\u001b[33m++\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       \u001b[36mawait\u001b[39m availableSeats\u001b[33m.\u001b[39mnth(i)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     }\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[90m// Verify 8 seats selected\u001b[39m\u001b[0m\n\u001b[2m    at D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts:71:35\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:12.313Z",
+                      "startTime": "2025-11-20T17:06:21.975Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\test-results\\seating-map-Interactive-Se-b2bf8-aximum-of-8-seat-selections-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\test-results\\seating-map-Interactive-Se-b2bf8-aximum-of-8-seat-selections-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\test-results\\seating-map-Interactive-Se-b2bf8-aximum-of-8-seat-selections-firefox\\error-context.md"
+                        }
+                      ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b9a5234c35bda9cc218c-781c1f5133ecc00f89e4",
+              "file": "seating-map.spec.ts",
+              "line": 66,
+              "column": 3
+            },
+            {
+              "title": "should calculate and display total price correctly",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 7,
+                      "status": "timedOut",
+                      "duration": 31684,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-20T17:06:21.994Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\test-results\\seating-map-Interactive-Se-fc6d5-splay-total-price-correctly-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\test-results\\seating-map-Interactive-Se-fc6d5-splay-total-price-correctly-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\test-results\\seating-map-Interactive-Se-fc6d5-splay-total-price-correctly-firefox\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
                 }
               ],
               "id": "b9a5234c35bda9cc218c-35b43965e5de12e3d9bc",
@@ -446,15 +502,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 16,
-                      "parallelIndex": 3,
+                      "workerIndex": 18,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 2259,
+                      "duration": 9589,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:48.421Z",
+                      "startTime": "2025-11-20T17:07:30.541Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -480,15 +536,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 2,
+                      "workerIndex": 19,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 6949,
+                      "duration": 11674,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:49.229Z",
+                      "startTime": "2025-11-20T17:07:31.822Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -514,15 +570,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 19,
-                      "parallelIndex": 6,
+                      "workerIndex": 21,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 14262,
+                      "duration": 19873,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:49.341Z",
+                      "startTime": "2025-11-20T17:07:32.733Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -548,15 +604,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 18,
-                      "parallelIndex": 1,
+                      "workerIndex": 20,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 6342,
+                      "duration": 11317,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:49.274Z",
+                      "startTime": "2025-11-20T17:07:32.001Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -582,15 +638,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 24,
-                      "parallelIndex": 5,
+                      "workerIndex": 26,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1643,
+                      "duration": 3618,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:09.594Z",
+                      "startTime": "2025-11-20T17:08:04.337Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -616,15 +672,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 25,
-                      "parallelIndex": 3,
+                      "workerIndex": 27,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 2599,
+                      "duration": 3377,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:09.916Z",
+                      "startTime": "2025-11-20T17:08:05.303Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -650,15 +706,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 26,
-                      "parallelIndex": 0,
+                      "workerIndex": 28,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3711,
+                      "duration": 5511,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:09.971Z",
+                      "startTime": "2025-11-20T17:08:05.305Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -684,15 +740,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 27,
-                      "parallelIndex": 2,
+                      "workerIndex": 29,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2519,
+                      "duration": 3953,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:10.218Z",
+                      "startTime": "2025-11-20T17:08:06.508Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -718,15 +774,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 32,
-                      "parallelIndex": 5,
+                      "workerIndex": 34,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3414,
+                      "duration": 5570,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:21.044Z",
+                      "startTime": "2025-11-20T17:08:22.544Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -752,15 +808,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 33,
-                      "parallelIndex": 2,
+                      "workerIndex": 36,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 4797,
+                      "duration": 6347,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:21.052Z",
+                      "startTime": "2025-11-20T17:08:23.193Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -786,13 +842,13 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 34,
-                      "parallelIndex": 4,
+                      "workerIndex": 37,
+                      "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 19410,
+                      "duration": 22940,
                       "error": {
-                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('circle[aria-label*=\"available\"]').nth(6)\u001b[22m\n\u001b[2m    - locator resolved to <circle r=\"3\" cx=\"50\" cy=\"80\" tabindex=\"0\" stroke=\"none\" role=\"button\" fill=\"#10b981\" stroke-width=\"0\" focusable=\"true\" aria-pressed=\"false\" aria-disabled=\"false\" aria-label=\"Seat A-2-01, available, $100\" class=\"cursor-pointer hover:opacity-80 transition\"></circle>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n",
-                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('circle[aria-label*=\"available\"]').nth(6)\u001b[22m\n\u001b[2m    - locator resolved to <circle r=\"3\" cx=\"50\" cy=\"80\" tabindex=\"0\" stroke=\"none\" role=\"button\" fill=\"#10b981\" stroke-width=\"0\" focusable=\"true\" aria-pressed=\"false\" aria-disabled=\"false\" aria-label=\"Seat A-2-01, available, $100\" class=\"cursor-pointer hover:opacity-80 transition\"></circle>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\n    at D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts:71:35",
+                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('circle[aria-label*=\"available\"]').nth(6)\u001b[22m\n\u001b[2m    - locator resolved to <circle r=\"3\" cx=\"50\" cy=\"80\" tabindex=\"0\" stroke=\"none\" role=\"button\" fill=\"#10b981\" stroke-width=\"0\" focusable=\"true\" aria-pressed=\"false\" aria-disabled=\"false\" aria-label=\"Seat A-2-01, available, $100\" class=\"cursor-pointer hover:opacity-80 transition\"></circle>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('circle[aria-label*=\"available\"]').nth(6)\u001b[22m\n\u001b[2m    - locator resolved to <circle r=\"3\" cx=\"50\" cy=\"80\" tabindex=\"0\" stroke=\"none\" role=\"button\" fill=\"#10b981\" stroke-width=\"0\" focusable=\"true\" aria-pressed=\"false\" aria-disabled=\"false\" aria-label=\"Seat A-2-01, available, $100\" class=\"cursor-pointer hover:opacity-80 transition\"></circle>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n    at D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts:71:35",
                         "location": {
                           "file": "D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts",
                           "column": 35,
@@ -807,13 +863,13 @@
                             "column": 35,
                             "line": 71
                           },
-                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('circle[aria-label*=\"available\"]').nth(6)\u001b[22m\n\u001b[2m    - locator resolved to <circle r=\"3\" cx=\"50\" cy=\"80\" tabindex=\"0\" stroke=\"none\" role=\"button\" fill=\"#10b981\" stroke-width=\"0\" focusable=\"true\" aria-pressed=\"false\" aria-disabled=\"false\" aria-label=\"Seat A-2-01, available, $100\" class=\"cursor-pointer hover:opacity-80 transition\"></circle>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\n\n\u001b[0m \u001b[90m 69 |\u001b[39m     \u001b[90m// Select 8 seats\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m i \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m i \u001b[33m<\u001b[39m \u001b[35m8\u001b[39m\u001b[33m;\u001b[39m i\u001b[33m++\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       \u001b[36mawait\u001b[39m availableSeats\u001b[33m.\u001b[39mnth(i)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     }\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[90m// Verify 8 seats selected\u001b[39m\u001b[0m\n\u001b[2m    at D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts:71:35\u001b[22m"
+                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('circle[aria-label*=\"available\"]').nth(6)\u001b[22m\n\u001b[2m    - locator resolved to <circle r=\"3\" cx=\"50\" cy=\"80\" tabindex=\"0\" stroke=\"none\" role=\"button\" fill=\"#10b981\" stroke-width=\"0\" focusable=\"true\" aria-pressed=\"false\" aria-disabled=\"false\" aria-label=\"Seat A-2-01, available, $100\" class=\"cursor-pointer hover:opacity-80 transition\"></circle>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - performing click action\u001b[22m\n\u001b[2m      - <svg width=\"100%\" height=\"100%\" class=\"mx-auto\" role=\"application\" viewBox=\"0 0 1024 768\" aria-label=\"Interactive seating map\">…</svg> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <header class=\"bg-white shadow-lg p-4 sticky top-0 z-50\">…</header> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 69 |\u001b[39m     \u001b[90m// Select 8 seats\u001b[39m\n \u001b[90m 70 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m i \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m i \u001b[33m<\u001b[39m \u001b[35m8\u001b[39m\u001b[33m;\u001b[39m i\u001b[33m++\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       \u001b[36mawait\u001b[39m availableSeats\u001b[33m.\u001b[39mnth(i)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m     }\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m     \u001b[90m// Verify 8 seats selected\u001b[39m\u001b[0m\n\u001b[2m    at D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts:71:35\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:21.238Z",
+                      "startTime": "2025-11-20T17:08:24.333Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -861,14 +917,14 @@
                   "results": [
                     {
                       "workerIndex": 35,
-                      "parallelIndex": 0,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 5736,
+                      "duration": 6936,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:21.379Z",
+                      "startTime": "2025-11-20T17:08:23.040Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -894,15 +950,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 40,
-                      "parallelIndex": 5,
+                      "workerIndex": 42,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1824,
+                      "duration": 3349,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:38.822Z",
+                      "startTime": "2025-11-20T17:08:49.619Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -928,15 +984,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 42,
+                      "workerIndex": 43,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2685,
+                      "duration": 5119,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:39.127Z",
+                      "startTime": "2025-11-20T17:08:49.547Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -962,15 +1018,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 41,
-                      "parallelIndex": 6,
+                      "workerIndex": 44,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 3815,
+                      "duration": 5694,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:38.987Z",
+                      "startTime": "2025-11-20T17:08:49.817Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -996,15 +1052,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 43,
-                      "parallelIndex": 2,
+                      "workerIndex": 46,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2282,
+                      "duration": 7461,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:39.280Z",
+                      "startTime": "2025-11-20T17:08:50.696Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1041,12 +1097,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 3930,
+                      "duration": 10688,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:42:58.032Z",
+                      "startTime": "2025-11-20T17:05:58.097Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1075,12 +1131,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 3721,
+                      "duration": 11023,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:42:58.033Z",
+                      "startTime": "2025-11-20T17:05:57.880Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1109,12 +1165,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 4278,
+                      "duration": 10880,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:42:58.051Z",
+                      "startTime": "2025-11-20T17:05:58.202Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1143,12 +1199,12 @@
                       "workerIndex": 7,
                       "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 3692,
+                      "duration": 11029,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:42:58.031Z",
+                      "startTime": "2025-11-20T17:05:58.010Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1174,15 +1230,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2989,
+                      "duration": 3235,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:02.174Z",
+                      "startTime": "2025-11-20T17:06:09.885Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1209,14 +1265,14 @@
                   "results": [
                     {
                       "workerIndex": 12,
-                      "parallelIndex": 0,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 9988,
+                      "duration": 20086,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:12.260Z",
+                      "startTime": "2025-11-20T17:06:21.994Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1242,15 +1298,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 14,
-                      "parallelIndex": 2,
+                      "workerIndex": 13,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 12037,
+                      "duration": 30153,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:12.390Z",
+                      "startTime": "2025-11-20T17:06:21.975Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1276,15 +1332,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 13,
+                      "workerIndex": 14,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 8864,
+                      "duration": 26695,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:12.411Z",
+                      "startTime": "2025-11-20T17:06:22.153Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1311,14 +1367,14 @@
                   "results": [
                     {
                       "workerIndex": 15,
-                      "parallelIndex": 6,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 9730,
+                      "duration": 12963,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:12.735Z",
+                      "startTime": "2025-11-20T17:06:22.129Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1344,15 +1400,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 8,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 8432,
+                      "duration": 26623,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:22.290Z",
+                      "startTime": "2025-11-20T17:06:37.030Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1378,15 +1434,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 21,
-                      "parallelIndex": 4,
+                      "workerIndex": 22,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5213,
+                      "duration": 9791,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:49.675Z",
+                      "startTime": "2025-11-20T17:07:32.827Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1412,15 +1468,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 20,
-                      "parallelIndex": 7,
+                      "workerIndex": 23,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5420,
+                      "duration": 9844,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:49.527Z",
+                      "startTime": "2025-11-20T17:07:33.328Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1446,15 +1502,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 23,
-                      "parallelIndex": 0,
+                      "workerIndex": 24,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 5292,
+                      "duration": 6062,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:50.975Z",
+                      "startTime": "2025-11-20T17:07:55.578Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1480,15 +1536,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 22,
-                      "parallelIndex": 5,
+                      "workerIndex": 18,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 4564,
+                      "duration": 4900,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:49.970Z",
+                      "startTime": "2025-11-20T17:07:43.309Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1514,15 +1570,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 16,
-                      "parallelIndex": 3,
+                      "workerIndex": 22,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5899,
+                      "duration": 6123,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:50.869Z",
+                      "startTime": "2025-11-20T17:07:43.560Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1548,15 +1604,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 28,
-                      "parallelIndex": 1,
+                      "workerIndex": 30,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 2295,
+                      "duration": 3692,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:10.540Z",
+                      "startTime": "2025-11-20T17:08:06.544Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1582,15 +1638,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 29,
-                      "parallelIndex": 4,
+                      "workerIndex": 31,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 2248,
+                      "duration": 3934,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:10.883Z",
+                      "startTime": "2025-11-20T17:08:07.304Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1616,15 +1672,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 30,
-                      "parallelIndex": 6,
+                      "workerIndex": 32,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2552,
+                      "duration": 3489,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:11.768Z",
+                      "startTime": "2025-11-20T17:08:07.889Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1650,15 +1706,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 31,
-                      "parallelIndex": 7,
+                      "workerIndex": 33,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 2108,
+                      "duration": 3683,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:13.385Z",
+                      "startTime": "2025-11-20T17:08:10.677Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1684,15 +1740,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 24,
-                      "parallelIndex": 5,
+                      "workerIndex": 26,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2078,
+                      "duration": 2902,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:11.480Z",
+                      "startTime": "2025-11-20T17:08:08.523Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1718,15 +1774,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 36,
+                      "workerIndex": 38,
                       "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 4607,
+                      "duration": 6686,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:21.370Z",
+                      "startTime": "2025-11-20T17:08:24.227Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1752,15 +1808,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 37,
-                      "parallelIndex": 3,
+                      "workerIndex": 39,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4410,
+                      "duration": 6399,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:21.843Z",
+                      "startTime": "2025-11-20T17:08:24.345Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1786,15 +1842,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 38,
+                      "workerIndex": 40,
                       "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 4404,
+                      "duration": 6371,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:21.960Z",
+                      "startTime": "2025-11-20T17:08:24.307Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1820,15 +1876,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 39,
+                      "workerIndex": 41,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4149,
+                      "duration": 5952,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:22.062Z",
+                      "startTime": "2025-11-20T17:08:25.320Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1854,15 +1910,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 32,
-                      "parallelIndex": 5,
+                      "workerIndex": 34,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4107,
+                      "duration": 6722,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:24.662Z",
+                      "startTime": "2025-11-20T17:08:28.443Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1889,14 +1945,14 @@
                   "results": [
                     {
                       "workerIndex": 45,
-                      "parallelIndex": 0,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 2460,
+                      "duration": 4993,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:42.191Z",
+                      "startTime": "2025-11-20T17:08:50.468Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1922,15 +1978,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 44,
-                      "parallelIndex": 1,
+                      "workerIndex": 47,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 2240,
+                      "duration": 3187,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:41.147Z",
+                      "startTime": "2025-11-20T17:08:50.998Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1956,15 +2012,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 46,
-                      "parallelIndex": 7,
+                      "workerIndex": 49,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 2260,
+                      "duration": 5274,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:43.775Z",
+                      "startTime": "2025-11-20T17:08:52.069Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1990,15 +2046,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 40,
-                      "parallelIndex": 5,
+                      "workerIndex": 48,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1356,
+                      "duration": 3981,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:40.931Z",
+                      "startTime": "2025-11-20T17:08:51.697Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2024,15 +2080,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 47,
-                      "parallelIndex": 4,
+                      "workerIndex": 42,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 842,
+                      "duration": 7009,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:49.270Z",
+                      "startTime": "2025-11-20T17:08:53.883Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2066,15 +2122,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 7,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3012,
+                      "duration": 2893,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:02.181Z",
+                      "startTime": "2025-11-20T17:06:10.416Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2100,15 +2156,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 2685,
+                      "duration": 2771,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:02.361Z",
+                      "startTime": "2025-11-20T17:06:10.556Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2137,12 +2193,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 2456,
+                      "duration": 2544,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:02.415Z",
+                      "startTime": "2025-11-20T17:06:10.609Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2168,15 +2224,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 12,
-                      "parallelIndex": 0,
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 11353,
+                      "duration": 21392,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:24.779Z",
+                      "startTime": "2025-11-20T17:06:39.719Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2202,15 +2258,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 15,
-                      "parallelIndex": 6,
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 11652,
+                      "duration": 16753,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:25.480Z",
+                      "startTime": "2025-11-20T17:06:44.263Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2236,15 +2292,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 7,
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7384,
+                      "duration": 19960,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:30.451Z",
+                      "startTime": "2025-11-20T17:06:55.588Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2270,15 +2326,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 22,
-                      "parallelIndex": 5,
+                      "workerIndex": 23,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6423,
+                      "duration": 6272,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:54.780Z",
+                      "startTime": "2025-11-20T17:07:43.711Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2304,15 +2360,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 21,
-                      "parallelIndex": 4,
+                      "workerIndex": 20,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 5132,
+                      "duration": 5689,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:55.148Z",
+                      "startTime": "2025-11-20T17:07:45.007Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2338,15 +2394,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 20,
-                      "parallelIndex": 7,
+                      "workerIndex": 19,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 5298,
+                      "duration": 6162,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:55.338Z",
+                      "startTime": "2025-11-20T17:07:45.419Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2372,15 +2428,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 25,
-                      "parallelIndex": 3,
+                      "workerIndex": 27,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 2567,
+                      "duration": 3056,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:12.818Z",
+                      "startTime": "2025-11-20T17:08:09.222Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2406,15 +2462,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 27,
-                      "parallelIndex": 2,
+                      "workerIndex": 30,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 2154,
+                      "duration": 2818,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:13.068Z",
+                      "startTime": "2025-11-20T17:08:11.091Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2440,15 +2496,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 28,
-                      "parallelIndex": 1,
+                      "workerIndex": 29,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2289,
+                      "duration": 3301,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:13.370Z",
+                      "startTime": "2025-11-20T17:08:11.264Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2474,15 +2530,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 33,
-                      "parallelIndex": 2,
+                      "workerIndex": 36,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 4968,
+                      "duration": 6379,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:26.048Z",
+                      "startTime": "2025-11-20T17:08:29.869Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2508,15 +2564,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 36,
-                      "parallelIndex": 6,
+                      "workerIndex": 35,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 3988,
+                      "duration": 5606,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:26.211Z",
+                      "startTime": "2025-11-20T17:08:30.389Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2542,15 +2598,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 39,
-                      "parallelIndex": 1,
+                      "workerIndex": 40,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 4639,
+                      "duration": 6593,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:26.438Z",
+                      "startTime": "2025-11-20T17:08:31.115Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2576,15 +2632,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 43,
-                      "parallelIndex": 2,
+                      "workerIndex": 47,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 2160,
+                      "duration": 6042,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:42.006Z",
+                      "startTime": "2025-11-20T17:08:54.734Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2610,15 +2666,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 42,
-                      "parallelIndex": 3,
+                      "workerIndex": 44,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 2108,
+                      "duration": 3055,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:42.116Z",
+                      "startTime": "2025-11-20T17:08:56.260Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2644,15 +2700,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 40,
+                      "workerIndex": 45,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 2219,
+                      "duration": 4232,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:42.380Z",
+                      "startTime": "2025-11-20T17:08:56.583Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2686,15 +2742,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 2945,
+                      "duration": 2980,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:02.455Z",
+                      "startTime": "2025-11-20T17:06:10.674Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2720,15 +2776,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 4,
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 8072,
+                      "duration": 17859,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:30.761Z",
+                      "startTime": "2025-11-20T17:07:00.126Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2755,14 +2811,14 @@
                   "results": [
                     {
                       "workerIndex": 18,
-                      "parallelIndex": 1,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 6928,
+                      "duration": 6604,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:55.814Z",
+                      "startTime": "2025-11-20T17:07:48.382Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2788,15 +2844,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 24,
-                      "parallelIndex": 5,
+                      "workerIndex": 28,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2524,
+                      "duration": 3913,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:13.625Z",
+                      "startTime": "2025-11-20T17:08:11.264Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2822,15 +2878,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 37,
-                      "parallelIndex": 3,
+                      "workerIndex": 39,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4853,
+                      "duration": 7349,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:26.472Z",
+                      "startTime": "2025-11-20T17:08:31.196Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2856,15 +2912,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 41,
-                      "parallelIndex": 6,
+                      "workerIndex": 43,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3263,
+                      "duration": 3238,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:43.142Z",
+                      "startTime": "2025-11-20T17:08:57.001Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2898,15 +2954,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 5110,
+                      "duration": 2732,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:02.545Z",
+                      "startTime": "2025-11-20T17:06:10.915Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2932,15 +2988,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 6893,
+                      "duration": 14588,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:30.893Z",
+                      "startTime": "2025-11-20T17:07:01.215Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2966,15 +3022,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 2,
+                      "workerIndex": 22,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 6062,
+                      "duration": 5934,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:56.361Z",
+                      "startTime": "2025-11-20T17:07:49.851Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3000,15 +3056,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 29,
-                      "parallelIndex": 4,
+                      "workerIndex": 26,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2115,
+                      "duration": 3232,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:13.832Z",
+                      "startTime": "2025-11-20T17:08:11.601Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3035,14 +3091,14 @@
                   "results": [
                     {
                       "workerIndex": 38,
-                      "parallelIndex": 7,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 4253,
+                      "duration": 6714,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:26.608Z",
+                      "startTime": "2025-11-20T17:08:31.356Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3068,15 +3124,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 44,
-                      "parallelIndex": 1,
+                      "workerIndex": 48,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1869,
+                      "duration": 3525,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:44.125Z",
+                      "startTime": "2025-11-20T17:08:57.475Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3098,40 +3154,6 @@
           "column": 6,
           "specs": [
             {
-              "title": "should zoom in when + button clicked",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 6,
-                      "status": "passed",
-                      "duration": 4920,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-11-19T16:43:02.743Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b9a5234c35bda9cc218c-c3f74c545d7db1f7d0b4",
-              "file": "seating-map.spec.ts",
-              "line": 293,
-              "column": 3
-            },
-            {
               "title": "should zoom out when - button clicked",
               "ok": true,
               "tags": [],
@@ -3144,15 +3166,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2880,
+                      "duration": 3056,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:04.264Z",
+                      "startTime": "2025-11-20T17:06:11.094Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3178,15 +3200,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3463,
+                      "duration": 3451,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:04.960Z",
+                      "startTime": "2025-11-20T17:06:13.190Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3197,40 +3219,6 @@
               "id": "b9a5234c35bda9cc218c-c3e4a81a7b624b0fa993",
               "file": "seating-map.spec.ts",
               "line": 329,
-              "column": 3
-            },
-            {
-              "title": "should zoom in when + button clicked",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 14,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 7169,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-11-19T16:43:31.696Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b9a5234c35bda9cc218c-561359cde7bf289313d6",
-              "file": "seating-map.spec.ts",
-              "line": 293,
               "column": 3
             },
             {
@@ -3246,15 +3234,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 5,
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 6818,
+                      "duration": 16397,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:33.076Z",
+                      "startTime": "2025-11-20T17:07:01.259Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3280,15 +3268,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 3,
+                      "workerIndex": 13,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 8225,
+                      "duration": 16655,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:33.402Z",
+                      "startTime": "2025-11-20T17:07:03.083Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3299,40 +3287,6 @@
               "id": "b9a5234c35bda9cc218c-f56e075f822d940571db",
               "file": "seating-map.spec.ts",
               "line": 329,
-              "column": 3
-            },
-            {
-              "title": "should zoom in when + button clicked",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 23,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5706,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-11-19T16:43:56.543Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b9a5234c35bda9cc218c-afc72833275837c7c32a",
-              "file": "seating-map.spec.ts",
-              "line": 293,
               "column": 3
             },
             {
@@ -3348,15 +3302,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 16,
-                      "parallelIndex": 3,
+                      "workerIndex": 23,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5978,
+                      "duration": 5437,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:56.800Z",
+                      "startTime": "2025-11-20T17:07:50.126Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3382,15 +3336,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 21,
-                      "parallelIndex": 4,
+                      "workerIndex": 20,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 7567,
+                      "duration": 7835,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:00.394Z",
+                      "startTime": "2025-11-20T17:07:50.823Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3401,40 +3355,6 @@
               "id": "b9a5234c35bda9cc218c-b43f66e2210fdd182fe8",
               "file": "seating-map.spec.ts",
               "line": 329,
-              "column": 3
-            },
-            {
-              "title": "should zoom in when + button clicked",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 26,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2118,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-11-19T16:44:13.970Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b9a5234c35bda9cc218c-23ca369027c0e54f9727",
-              "file": "seating-map.spec.ts",
-              "line": 293,
               "column": 3
             },
             {
@@ -3450,15 +3370,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 30,
-                      "parallelIndex": 6,
+                      "workerIndex": 31,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 3203,
+                      "duration": 3424,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:15.190Z",
+                      "startTime": "2025-11-20T17:08:12.156Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3484,15 +3404,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 27,
-                      "parallelIndex": 2,
+                      "workerIndex": 32,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2621,
+                      "duration": 3800,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:15.339Z",
+                      "startTime": "2025-11-20T17:08:12.289Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3503,40 +3423,6 @@
               "id": "b9a5234c35bda9cc218c-647ff45570cc8aa856aa",
               "file": "seating-map.spec.ts",
               "line": 329,
-              "column": 3
-            },
-            {
-              "title": "should zoom in when + button clicked",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 35,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4502,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-11-19T16:44:27.328Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b9a5234c35bda9cc218c-a0850aab28392ec833c5",
-              "file": "seating-map.spec.ts",
-              "line": 293,
               "column": 3
             },
             {
@@ -3552,15 +3438,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 32,
-                      "parallelIndex": 5,
+                      "workerIndex": 41,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3984,
+                      "duration": 6145,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:28.876Z",
+                      "startTime": "2025-11-20T17:08:31.804Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3586,15 +3472,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 36,
-                      "parallelIndex": 6,
+                      "workerIndex": 34,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 5462,
+                      "duration": 8679,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:30.263Z",
+                      "startTime": "2025-11-20T17:08:35.305Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3605,40 +3491,6 @@
               "id": "b9a5234c35bda9cc218c-74c8c567b5ef65f50ab9",
               "file": "seating-map.spec.ts",
               "line": 329,
-              "column": 3
-            },
-            {
-              "title": "should zoom in when + button clicked",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "iPad",
-                  "projectName": "iPad",
-                  "results": [
-                    {
-                      "workerIndex": 43,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2895,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-11-19T16:44:44.255Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b9a5234c35bda9cc218c-b33486fd9f3a2c80b112",
-              "file": "seating-map.spec.ts",
-              "line": 293,
               "column": 3
             },
             {
@@ -3654,15 +3506,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 42,
-                      "parallelIndex": 3,
+                      "workerIndex": 49,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 2189,
+                      "duration": 2622,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:44.340Z",
+                      "startTime": "2025-11-20T17:08:58.544Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3688,15 +3540,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 40,
-                      "parallelIndex": 5,
+                      "workerIndex": 46,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2490,
+                      "duration": 3202,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:44.691Z",
+                      "startTime": "2025-11-20T17:08:59.032Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3730,15 +3582,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4044,
+                      "duration": 4182,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:05.119Z",
+                      "startTime": "2025-11-20T17:06:13.257Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3764,15 +3616,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 12,
-                      "parallelIndex": 0,
+                      "workerIndex": 8,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 11052,
+                      "duration": 20026,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:36.294Z",
+                      "startTime": "2025-11-20T17:07:03.748Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3798,15 +3650,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 20,
-                      "parallelIndex": 7,
+                      "workerIndex": 19,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 8008,
+                      "duration": 10140,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:00.747Z",
+                      "startTime": "2025-11-20T17:07:51.700Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3832,15 +3684,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 25,
-                      "parallelIndex": 3,
+                      "workerIndex": 27,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 3704,
+                      "duration": 4439,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:15.463Z",
+                      "startTime": "2025-11-20T17:08:12.548Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3866,15 +3718,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 38,
-                      "parallelIndex": 7,
+                      "workerIndex": 35,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 6898,
+                      "duration": 9553,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:30.912Z",
+                      "startTime": "2025-11-20T17:08:36.101Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3900,15 +3752,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 45,
-                      "parallelIndex": 0,
+                      "workerIndex": 44,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 3530,
+                      "duration": 4065,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:45.125Z",
+                      "startTime": "2025-11-20T17:08:59.411Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3942,15 +3794,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 2974,
+                      "duration": 3670,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:05.249Z",
+                      "startTime": "2025-11-20T17:06:13.360Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3976,15 +3828,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 15,
-                      "parallelIndex": 6,
+                      "workerIndex": 16,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 7409,
+                      "duration": 12216,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:37.246Z",
+                      "startTime": "2025-11-20T17:07:20.636Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4010,15 +3862,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 22,
-                      "parallelIndex": 5,
+                      "workerIndex": 25,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 4835,
+                      "duration": 4535,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:01.252Z",
+                      "startTime": "2025-11-20T17:07:58.695Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4044,15 +3896,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 28,
-                      "parallelIndex": 1,
+                      "workerIndex": 30,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 2203,
+                      "duration": 3239,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:15.756Z",
+                      "startTime": "2025-11-20T17:08:14.113Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4078,15 +3930,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 33,
-                      "parallelIndex": 2,
+                      "workerIndex": 36,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 5146,
+                      "duration": 5373,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:31.061Z",
+                      "startTime": "2025-11-20T17:08:36.403Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4112,15 +3964,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 44,
-                      "parallelIndex": 1,
+                      "workerIndex": 43,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2072,
+                      "duration": 3866,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:46.084Z",
+                      "startTime": "2025-11-20T17:09:00.370Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4154,15 +4006,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 7,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3770,
+                      "duration": 3207,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:05.277Z",
+                      "startTime": "2025-11-20T17:06:13.436Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4188,15 +4040,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 2726,
+                      "duration": 3205,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:05.493Z",
+                      "startTime": "2025-11-20T17:06:13.480Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4222,15 +4074,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 1905,
+                      "duration": 2913,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:07.355Z",
+                      "startTime": "2025-11-20T17:06:13.723Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4256,15 +4108,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7248,
+                      "duration": 9570,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:37.922Z",
+                      "startTime": "2025-11-20T17:07:15.654Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4290,15 +4142,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 7,
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 7277,
+                      "duration": 8446,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:38.225Z",
+                      "startTime": "2025-11-20T17:07:15.950Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4324,15 +4176,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 4,
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 6613,
+                      "duration": 6557,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:38.891Z",
+                      "startTime": "2025-11-20T17:07:17.738Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4358,15 +4210,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 23,
-                      "parallelIndex": 0,
+                      "workerIndex": 21,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4815,
+                      "duration": 4324,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:02.317Z",
+                      "startTime": "2025-11-20T17:07:53.575Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4392,15 +4244,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 2,
+                      "workerIndex": 18,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 5004,
+                      "duration": 4882,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:02.476Z",
+                      "startTime": "2025-11-20T17:07:55.119Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4426,15 +4278,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 18,
-                      "parallelIndex": 1,
+                      "workerIndex": 23,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4907,
+                      "duration": 5848,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:02.785Z",
+                      "startTime": "2025-11-20T17:07:55.648Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4461,14 +4313,14 @@
                   "results": [
                     {
                       "workerIndex": 29,
-                      "parallelIndex": 4,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2266,
+                      "duration": 2716,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:16.011Z",
+                      "startTime": "2025-11-20T17:08:14.714Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4495,14 +4347,14 @@
                   "results": [
                     {
                       "workerIndex": 26,
-                      "parallelIndex": 0,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2323,
+                      "duration": 3364,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:16.164Z",
+                      "startTime": "2025-11-20T17:08:14.955Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4528,15 +4380,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 31,
-                      "parallelIndex": 7,
+                      "workerIndex": 28,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3049,
+                      "duration": 5061,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:16.204Z",
+                      "startTime": "2025-11-20T17:08:15.263Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4562,15 +4414,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 39,
-                      "parallelIndex": 1,
+                      "workerIndex": 40,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 3298,
+                      "duration": 6432,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:31.111Z",
+                      "startTime": "2025-11-20T17:08:37.855Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4596,15 +4448,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 37,
-                      "parallelIndex": 3,
+                      "workerIndex": 41,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4394,
+                      "duration": 7457,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:31.349Z",
+                      "startTime": "2025-11-20T17:08:38.044Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4630,15 +4482,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 35,
-                      "parallelIndex": 0,
+                      "workerIndex": 38,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 5113,
+                      "duration": 9135,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:31.862Z",
+                      "startTime": "2025-11-20T17:08:38.211Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4664,15 +4516,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 41,
-                      "parallelIndex": 6,
+                      "workerIndex": 47,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 2159,
+                      "duration": 2478,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:46.539Z",
+                      "startTime": "2025-11-20T17:09:00.888Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4698,15 +4550,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 42,
-                      "parallelIndex": 3,
+                      "workerIndex": 45,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 2031,
+                      "duration": 3346,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:46.621Z",
+                      "startTime": "2025-11-20T17:09:00.911Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4732,15 +4584,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 46,
-                      "parallelIndex": 7,
+                      "workerIndex": 42,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1768,
+                      "duration": 2679,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:47.103Z",
+                      "startTime": "2025-11-20T17:09:01.007Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4774,15 +4626,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 1563,
+                      "duration": 3083,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:07.743Z",
+                      "startTime": "2025-11-20T17:06:13.747Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4809,14 +4661,14 @@
                   "results": [
                     {
                       "workerIndex": 14,
-                      "parallelIndex": 2,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5708,
+                      "duration": 6853,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:38.987Z",
+                      "startTime": "2025-11-20T17:07:18.067Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4842,15 +4694,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 16,
-                      "parallelIndex": 3,
+                      "workerIndex": 22,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4122,
+                      "duration": 4531,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:02.818Z",
+                      "startTime": "2025-11-20T17:07:55.871Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4876,15 +4728,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 24,
-                      "parallelIndex": 5,
+                      "workerIndex": 33,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 1764,
+                      "duration": 2480,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:16.216Z",
+                      "startTime": "2025-11-20T17:08:15.398Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4910,15 +4762,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 32,
-                      "parallelIndex": 5,
+                      "workerIndex": 39,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2578,
+                      "duration": 4991,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:32.905Z",
+                      "startTime": "2025-11-20T17:08:38.649Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4944,15 +4796,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 43,
-                      "parallelIndex": 2,
+                      "workerIndex": 48,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1458,
+                      "duration": 2608,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:47.238Z",
+                      "startTime": "2025-11-20T17:09:01.120Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4986,15 +4838,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 6,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2194,
+                      "duration": 3271,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:07.796Z",
+                      "startTime": "2025-11-20T17:06:14.250Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -5020,13 +4872,13 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 5,
+                      "workerIndex": 17,
+                      "parallelIndex": 6,
                       "status": "failed",
-                      "duration": 6153,
+                      "duration": 14415,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m4000\u001b[39m\nReceived:   \u001b[31m4514\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m4000\u001b[39m\nReceived:   \u001b[31m4514\u001b[39m\n    at D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts:494:22",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m4000\u001b[39m\nReceived:   \u001b[31m7782\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m4000\u001b[39m\nReceived:   \u001b[31m7782\u001b[39m\n    at D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts:494:22",
                         "location": {
                           "file": "D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts",
                           "column": 22,
@@ -5041,13 +4893,13 @@
                             "column": 22,
                             "line": 494
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m4000\u001b[39m\nReceived:   \u001b[31m4514\u001b[39m\n\n\u001b[0m \u001b[90m 492 |\u001b[39m\n \u001b[90m 493 |\u001b[39m     \u001b[90m// Should load within 2 seconds\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 494 |\u001b[39m     expect(loadTime)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m4000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 495 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 496 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts:494:22\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m4000\u001b[39m\nReceived:   \u001b[31m7782\u001b[39m\n\n\u001b[0m \u001b[90m 492 |\u001b[39m\n \u001b[90m 493 |\u001b[39m     \u001b[90m// Should load within 2 seconds\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 494 |\u001b[39m     expect(loadTime)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m4000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 495 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 496 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\upscale_envo\\aiseoio\\frontend\\esm_one\\tests\\e2e\\seating-map.spec.ts:494:22\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:43:40.001Z",
+                      "startTime": "2025-11-20T17:07:27.158Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -5094,15 +4946,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 19,
-                      "parallelIndex": 6,
+                      "workerIndex": 21,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4484,
+                      "duration": 4673,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:03.814Z",
+                      "startTime": "2025-11-20T17:07:58.014Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -5128,15 +4980,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 28,
-                      "parallelIndex": 1,
+                      "workerIndex": 31,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 1435,
+                      "duration": 2690,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:18.027Z",
+                      "startTime": "2025-11-20T17:08:15.791Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -5162,15 +5014,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 39,
-                      "parallelIndex": 1,
+                      "workerIndex": 36,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 2689,
+                      "duration": 4692,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:34.478Z",
+                      "startTime": "2025-11-20T17:08:41.850Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -5196,15 +5048,15 @@
                   "projectName": "iPad",
                   "results": [
                     {
-                      "workerIndex": 40,
-                      "parallelIndex": 5,
+                      "workerIndex": 49,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 1959,
+                      "duration": 2935,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-11-19T16:44:47.265Z",
+                      "startTime": "2025-11-20T17:09:01.324Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -5224,11 +5076,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-11-19T16:42:53.473Z",
-    "duration": 117146.897,
-    "expected": 142,
+    "startTime": "2025-11-20T17:05:53.111Z",
+    "duration": 191547.209,
+    "expected": 134,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 4,
     "flaky": 0
   }
 }
